@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewPedia: Đăng nhập</title>
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="../css/template/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- load trang web -->
+    <div id="preloader"></div>
+    <style>
+        #preloader{
+        background: #FFF;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        }
+    </style>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.opacity = 0;
+                loader.style.transition = "opacity 1s ease";
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 1000);
+            }, 500);
+        })
+    </script> 
+    <!-- load trang web -->
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+    <div class="login-container">
+        <div class="content">
+            <div class="login-logo-wrapper">
+                <img src="../images/webicon/web_logo.png" alt="Logo Kombucha" class="login-logo">
+            </div>
+            <h5>Đăng nhập</h5>
+            <form>
+                <div>
+                    <input type="text" class="form-control" placeholder="Email">
+                    <small class="text-secondary error"></small>
+                </div>
+                <div>
+                    <input type="password" class="form-control" placeholder="Mật khẩu">
+                    <small class="text-secondary error"></small>
+                    <span id="togglePassword">
+                        <i></i>
+                    </span>
+                </div>
+                <button type="submit" class="btn">Đăng nhập</button><br>
+            </form><br>
+            <div class="text-center">Hoặc đăng nhập với</div><br>
+            <div class="another-method">
+                <button class="method-login"><i class="fab fa-facebook"></i> Facebook</button>
+                <button class="method-login"><i class="fab fa-google"></i> Google</button>
+            </div> <br>
+            <div class="text-center">
+                Bạn chưa có tài khoản? <a href="register.html">Đăng kí ngay</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>

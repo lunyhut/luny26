@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewPedia: Làm Kombucha Tại Nhà Dễ Dàng</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body> 
+    <div class="login-logo-wrapper">
+        <img src="../images/webicon/web_logo.png" alt="Logo Kombucha" class="login-logo">
+    </div>
+    <!-- load trang web -->
+    <div id="preloader"></div>
+    <style>
+        #preloader{
+        background: #FFF;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        }
+    </style>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.opacity = 0;
+                loader.style.transition = "opacity 1s ease";
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 1000);
+            }, 300);
+        })
+    </script> 
+    <!-- load trang web -->
+     
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+
+    
+    <div class="banner" id="banner">
+        <img src="../images/home/Made-it-easy.png" alt="banner">
+        <div class="banner-text">
+            <img src="../images/home/Made-it-easy-text.png" alt="">
+            <p>Chúng mình là một nhóm các bạn trẻ đam mê pha chế tại nhà và đã giúp hàng trăm người tự tay làm 
+                kombucha ngay trong căn bếp của mình!</p>
+        <button>
+            <a href="https://www.tiktok.com/@lunytrans">Tham gia cùng chúng mình!</a>
+        </button>
+        </div>
+    </div>
+
+
+
+    <div class="main-content">
+        
+        <div class="menu1">
+            <div class="menu1-item">
+                <a href="../views/tutorial.html">
+                    <span>Bắt đầu ủ</span>
+                    <img src="../images/home/how-to-make-homemade-kombucha-photo-2-480x480.jpg" alt="cách làm Kombucha">
+                </a>
+            </div>
+            <div class="menu1-item">
+                <a href="../views/shop.html">
+                    <span>Dụng cụ</span>
+                    <img src="../images/home/blueberry-kombucha-recipe-1-480x480.jpg" alt="Dụng cụ">
+                </a>
+            </div>
+            <div class="menu1-item">
+                <a href="#vi-tri-huong-vi">
+                    <span>Chọn hương vị</span>
+                    <img src="../images/home/homemade-multi-green-kombucha-featured-480x480.jpg" alt="Chọn Hương vị">
+                </a>
+            </div>
+            
+            <div class="menu1-item">
+                <a href="../views/introduction.html">
+                    <span>Giới thiệu</span>
+                    <img src="../images/home/kickass-comprehensive-500x500.png" alt="Giới thiệu">
+                </a>
+            </div>
+        </div>
+
+        <div class="brief-introduction">
+            <figure>
+                <img src="../images/home/sarah-kombucha-4.jpg" alt="Ảnh minh họa">
+            </figure>
+            <div class="introduction-paragraph">
+                <h2>Hãy cùng ngâm Kombucha nhé!</h2>
+                <p>Chúng mình là một nhóm các bạn trẻ đam mê pha chế tại nhà và đã giúp hàng trăm người tự tay làm kombucha ngay trong căn bếp của mình!</p>
+                <p>Tình yêu với kombucha của tụi mình cũng bắt đầu y chang bao người khác – nghiện mấy chai kombucha bán sẵn đến mức móc hầu bao không suy nghĩ. Cho đến một ngày đẹp trời, tụi mình lạc vào thế giới kombucha tự làm. Kể từ đó, tụi mình nói không với kombucha đóng chai luôn!</p>
+                <button>
+                    <a href="https://www.facebook.com/groups/2103347326600975">Tham gia cùng chúng mình!</a>
+                </button>
+                <div class="social">
+                    <a href="https://www.instagram.com/iamjack1997/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/jack.phuongtuan1204">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@J97imjack">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <h1 class="menu2-head-paragraph" id="vi-tri-huong-vi">Tìm hương vị yêu thích</h1>
+        <div class="menu2">
+                    <div class="menu2-item">
+                        <span>Hương trái cây</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/rosemary-grape-kombucha-featured-320x320.jpg" alt="Hương trái cây"></figure>
+                        </a>
+                        
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Hương gia vị</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/CHAI-SPICE-kombucha-featured-320x320.jpg" alt="Hương trái cây"></figure>
+                        </a>
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Hương thảo mộc</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/homemade-multi-green-kombucha-featured-480x480.jpg" alt="Hương thảo mộc"></figure>
+                        </a>
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Hương hoa</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/elderflower-kombucha-featured-320x320.jpg" alt="Hương hoa"></figure>
+                        </a>
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Hương vị mùa nóng</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/kombucha-shandy-recipe-3-378x378.jpg" alt="Hương vị mùa nóng"></figure>
+                        </a> 
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Hương vị mùa lạnh</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/gluhwein-kombucha-featured-320x320.jpg" alt="Hương vị mùa lạnh"></figure>
+                        </a>
+                    </div>
+        </div>
+
+        <div class="what-is-kombucha">
+            <h1>KOMBUCHA LÀ GÌ?</h1>
+            <p>Kombucha là một loại đồ uống lên men có ga, giàu probiotics tốt cho đường ruột, được làm từ trà lên men. Tự nấu kombucha tại nhà không chỉ giúp tiết kiệm chi phí mà còn cho phép bạn tự tạo ra những hương vị kết hợp độc đáo theo ý thích. Và điều tuyệt nhất là việc làm ra kombucha dễ hơn rất nhiều so nhữ gì bạn tưởng tượng.</p>
+        </div>
+
+        <div class="top-flavors">
+            <h1 id="vi-tri-10-huong-vi">TOP 10 HƯƠNG VỊ</h1>
+            <hr>
+        </div>
+
+        <div class="menu3">
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/chia-seed-kombucha-featured-378x378.jpg" alt="Kombucha Hạt Ngọc Trung Hoa" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>1</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Hạt Ngọc Trung Hoa</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 1 hr
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/orange-creamsicle-kombucha-featured-378x378.jpg" alt="Kombucha Kem Cam" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>2</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Kem Cam</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/homemade-trilogy-kombucha-featured-378x378.jpg" alt="Kombucha Mâm Xôi Gừng (Bản Pha Chế Trilogy)" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>3</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Mâm Xôi Gừng (Bản Pha Chế Trilogy)</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/lemon-ginger-kombucha-featured-1-378x378.jpg" alt="Kombucha Chanh Gừng" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>4</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Chanh Gừng</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/cream-soda-kombucha-featured-378x378.jpg" alt="Kombucha Kem Soda" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>5</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Kem Soda</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/hibiscus-kombucha-vert-378x378.jpg" alt="Kombucha Hoa Dâm Bụt (Tùy Chọn Lên Men Đợt 1 hoặc 2)" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>6</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Hoa Dâm Bụt (Tùy Chọn Lên Men Đợt 1 hoặc 2)</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/butterfly-pea-tea-kombucha-vert-378x378.jpg" alt="Kombucha Hoa Đậu Biếc" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>7</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Hoa Đậu Biếc</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/banana-bread-kombucha-featured-378x378.jpg" alt="Kombucha Chuối Nướng" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>8</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Chuối Nướng</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/turmeric-kombucha-featured-378x378.jpg" alt="Kombucha Nghệ Vàng" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>9</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Nghệ Vàng</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 1 hr
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/ginger-beet-kombucha-featured-378x378.jpg" alt="Kombucha Gừng Củ Dền" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>10</h2>
+                    </div>
+                    <h3 class="flavor-name">Kombucha Gừng Củ Dền</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h1>CÂU HỎI THƯỜNG GẶP VỀ KOMBUCHA</h1>
+            <div class="faq-container">
+            <div class="faq-item">
+                <img src="../images/home/faq section/kombucha-scoby-hotel-feat-350x350.jpg" alt="Tại sao Kombucha của tôi không có ga?">
+                <h2>Tại sao Kombucha của tôi không có ga? 10 cách khắc phục Kombucha bị xẹp!</h2>
+            </div>
+            <div class="faq-item">
+                <img src="../images/home/faq section/make-hard-kombucha-recipe-featured2-378x378.jpg" alt="Cách làm Kombucha có cồn">
+                <h2>Cách làm Kombucha có cồn</h2>
+            </div>
+            <div class="faq-item">
+                <img src="../images/home/faq section/kombucha-mold-Pin5-square-350x350.jpg" alt="Mốc Kombucha và không phải mốc">
+                <h2>Mốc Kombucha và không phải mốc (Hướng dẫn bằng ảnh chi tiết!)</h2>
+            </div>
+            <div class="faq-item">
+                <img src="../images/home/faq section/kombucha-scoby-hotel-feat-350x350.jpg" alt="Khách sạn SCOBY">
+                <h2>Khách sạn SCOBY: Cách làm và bảo quản chúng!</h2>
+            </div>
+            </div>
+            <a href="./faq.html" class="see-all-faqs">Xem tất cả câu hỏi thường gặp →</a>
+        </div>
+
+        <div class="subscribe-section">
+            <h2>Bạn có câu hỏi về việc ngâm Kombucha?</h2>
+            <p>Chúng tôi sẽ hướng dẫn bạn những mẹo hay nhất để làm kombucha tại nhà (kèm theo một tài liệu hướng dẫn 15 trang có thể in được về cách ủ kombucha).</p>
+            <form class="subscribe-form">
+                <div class="form-group">
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" placeholder="Nhập tên" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email của bạn:</label>
+                    <input type="email" id="email" placeholder="Nhập email" required>
+                </div>
+                <button>Đăng ký</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+
+    <script src="../scripts/home.js"></script>
+
+    <div class="logout-wrapper">
+        <button id="logout-btn" onclick="handleLogout()">
+            <span class="text">Đăng xuất tài khoản</span>
+            <span class="arrow">→</span>
+        </button>
+    </div>
+
+    <script> //Thuộc tính "Đăng xuất" =)))
+            function handleLogout() {
+            document.getElementById("logout-modal").classList.add("show");
+        }
+
+        function confirmLogout(isConfirmed) {
+            document.getElementById("logout-modal").classList.remove("show");
+            if (isConfirmed) {
+                localStorage.removeItem("user_token"); 
+                sessionStorage.clear();
+                window.location.href = "login.html"; 
+            }
+        }
+    </script>
+    
+    <script>
+        //Thuộc tính nhớ vị trí cuộn trang chủ =))))
+    window.addEventListener('scroll', () => {
+        sessionStorage.setItem('homeScrollPosition', window.scrollY);
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedPosition = sessionStorage.getItem('homeScrollPosition');
+        if (savedPosition) {
+            window.scrollTo({
+                top: parseInt(savedPosition, 10),
+                behavior: 'instant'
+            });
+        }
+    });
+</script>
+
+<div id="logout-modal" class="modal-overlay">
+    <div class="modal-box">
+        <h3>Bạn chắc chắn muốn đăng xuất?</h3>
+        <div class="modal-buttons">
+            <button class="btn-confirm" onclick="confirmLogout(true)">Đăng xuất</button>
+            <button class="btn-cancel" onclick="confirmLogout(false)">Hủy</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

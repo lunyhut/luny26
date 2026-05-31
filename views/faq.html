@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewPedia: FAQs</title>
+    <script src="../scripts/mainPage.js"></script>
+    <link rel="stylesheet" href="../css/faq.css">
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const headers = document.querySelectorAll(".card h3");
+        
+            headers.forEach(header => {
+                header.addEventListener("click", function() {
+                    const currentlyActive = document.querySelector(".answer.show");
+                    const answer = this.nextElementSibling;
+                    if (currentlyActive && currentlyActive !== answer) {
+                        currentlyActive.classList.remove("show");
+                    }
+                    answer.classList.toggle("show");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Thoát trang ok chưa -->
+     <button id="back-btn" onclick="goBack()">
+        <img src="../images/webicon/back1.svg" alt="Home" class="back-icon">
+    </button>
+        <script>
+            function goBack() {
+                if (document.referrer !== "") {
+                    window.history.back();
+                } else {
+                    window.location.href = " home.html";
+                }
+            }
+        </script>
+
+    <!-- load trang web -->
+    <div id="preloader"></div>
+    <style>
+        #preloader{
+        background: #FFF;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        }
+    </style>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.opacity = 0;
+                loader.style.transition = "opacity 1s ease";
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 1000);
+            }, 300);
+        })
+    </script> 
+    
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+
+    <section class="faq-section">
+        <h1>FAQ</h1>
+        <p>
+            Bạn có câu hỏi gì trong quá trình ủ kombucha? Dưới đây là những câu hỏi được hỏi thường xuyên nhất về làm kombucha tại nhà! Không có câu hỏi nào là thừa ở đây cả! Bấm vào câu hỏi để xem câu trả lời nhé!
+        </p>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <img src="../images/faq/img1.jpg" alt="img1">
+                <h3 onclick="toggleAnswer(this)">Kombucha chính xác là gì nhỉ?</h3>
+                <p class="answer">Là một loại trà lên men được tạo ra bằng cách ủ trà ngọt với SCOBY (Cộng sinh vi khuẩn và nấm men).</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img2.jpg" alt="img2">
+                <h3 onclick="toggleAnswer(this)">Kombucha có phải một loại rượu không</h3>
+                <p class="answer">Kombucha có chứa một lượng nhỏ rượu, nhưng không đủ để được coi là một loại rượu. Thông thường, kombucha có nồng độ cồn dưới 0.5%.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img3.jpg" alt="img3">
+                <h3 onclick="toggleAnswer(this)">Trẻ em có uống được kombucha không?</h3>
+                <p class="answer">Có, nhưng nên cho trẻ uống kombucha với lượng vừa phải và dưới sự giám sát của người lớn.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img4.jpg" alt="img4">
+                <h3 onclick="toggleAnswer(this)">Liệu kombucha có thực sự tốt cho hệ đường ruột?</h3>
+                <p class="answer">Kombucha có chứa probiotic và enzyme có thể hỗ trợ tiêu hóa và sức khỏe đường ruột, nhưng hiệu quả cụ thể có thể khác nhau tùy thuộc vào từng người.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img5.jpg" alt="img5">
+                <h3 onclick="toggleAnswer(this)">SCOBY là gì và tôi có thể mua ở đâu</h3>
+                <p class="answer">SCOBY là cộng sinh vi khuẩn và nấm men; bạn có thể lấy từ bạn bè ủ kombucha, mua online, hoặc tự nuôi từ kombucha chưa tiệt trùng mua ngoài hàng.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img6.jpg" alt="img6">
+                <h3 onclick="toggleAnswer(this)">Thời gian ủ kombucha mất bao lâu?</h3>
+                <p class="answer">Thời gian ủ kombucha thường từ 7 đến 14 ngày, tùy thuộc vào nhiệt độ và sở thích cá nhân về độ chua.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img7.jpg" alt="img7">
+                <h3 onclick="toggleAnswer(this)">Có thể dùng trà có vị được không?</h3>
+                <p class="answer">Có, nhưng nên chọn trà không có hương liệu nhân tạo hoặc phẩm màu để tránh ảnh hưởng đến
+            </div>
+            <div class="card">
+                <img src="../images/faq/img8.jpg" alt="img8">
+                <h3 onclick="toggleAnswer(this)">Nhiệt độ lý tưởng để ủ kombucha là?</h3>
+                <p class="answer">Từ 24°C đến 27°C (75°F–80°F) là tốt nhất. Nhiệt độ quá thấp có thể làm chậm quá trình</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img9.jpg" alt="img9">
+                <h3 onclick="toggleAnswer(this)">Làm sao để biết kombucha đã hoàn thành</h3>
+                <p class="answer">Kombucha đã hoàn thành khi có vị chua nhẹ và không còn vị ngọt. Bạn có thể thử bằng cách dùng ống hút hoặc muỗng sạch để lấy một ít kombucha ra và nếm thử.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img10.jpg" alt="img10">
+                <h3 onclick="toggleAnswer(this)">Để ủ kombucha tôi nên dùng loại trà nào</h3>
+                <p class="answer">Trà đen và trà xanh là hai loại trà phổ biến nhất để ủ kombucha. Bạn cũng có thể thử nghiệm với các loại trà khác như trà trắng hoặc trà ô long.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img11.jpg" alt="img11">
+                <h3 onclick="toggleAnswer(this)">Tôi có thể dùng mật ong hoặc chất tạo ngọt thay cho đường được không?</h3>
+                <p class="answer">Không nên dùng mật ong vì nó có thể giết chết SCOBY. Đường là nguồn thức ăn chính cho SCOBY trong quá trình lên
+            </div>
+            <div class="card">
+                <img src="../images/faq/img12.jpg" alt="img12">
+                <h3 onclick="toggleAnswer(this)">Loại nước nào phù hợp nhất để ủ kombucha?</h3>
+                <p class="answer">Nước lọc hoặc nước tinh khiết là tốt nhất.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img13.jpg" alt="img13">
+                <h3 onclick="toggleAnswer(this)">Tôi có nên dùng nguyên liệu hữu cơ không?</h3>
+                <p class="answer">Có, nguyên liệu hữu cơ thường không chứa hóa chất độc hại và có thể giúp kombucha của bạn ngon hơn.</p>
+            </div>
+        
+            <div class="card">
+                <img src="../images/faq/img14.jpg" alt="img14">
+                <h3 onclick="toggleAnswer(this)">Tôi có thể cho hoa quả hoặc hương liệu vào trong quá trình ủ không?</h3>
+                <p class="answer">Có, bạn có thể thêm hoa quả hoặc hương liệu vào kombucha trong quá trình ủ lần thứ hai để tạo hương vị mới.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img15.jpg" alt="img15">
+                <h3 onclick="toggleAnswer(this)">Tạo hương vị cho kombucha</h3>
+                <p class="answer">Có nhiều cách để tạo hương vị cho kombucha, bao gồm thêm hoa quả, gia vị, hoặc thảo mộc vào trong quá trình ủ lần thứ hai.</p>
+            </div>
+            <div class="card">
+                <img src="../images/faq/img16.jpg" alt="img16">
+                <h3 onclick="toggleAnswer(this)">Tại sao phải ủ lần thứ hai? và có cần thiết không?</h3>
+                <p class="answer">Ủ lần thứ hai giúp tạo ra hương vị và khí ga cho kombucha. Tuy nhiên, nếu bạn thích kombucha không có khí ga, bạn có thể bỏ qua bước này.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+</body>
+</html>

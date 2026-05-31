@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewPedia: Giới thiệu</title>
+    <link rel="stylesheet" href="../css/introduction.css">
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+</head>
+
+<body>
+     <button id="back-btn" onclick="goBack()">
+        <img src="../images/webicon/back1.svg" alt="Home" class="back-icon">
+    </button>
+        <script>
+            function goBack() {
+                // Kiểm tra xem có trang trước đó trong lịch sử trình duyệt không
+                if (document.referrer !== "") {
+                    window.history.back();
+                } else {
+                    // Nếu họ vào thẳng trang này bằng link, đưa họ về trang chủ mặc định
+                    window.location.href = " home.html"; 
+                }
+            }
+        </script>
+       <!-- load trang web -->
+        <div class="login-logo-wrapper">
+            <img src="../images/webicon/web_logo.png" alt="Logo Kombucha" class="login-logo">
+        </div>
+       <div id="preloader"></div>
+       <style>
+           #preloader{
+           background: #FFF;
+           height: 100vh;
+           width: 100vw;
+           position: fixed;
+           z-index: 1000;
+           top: 0;
+           left: 0;
+           }
+       </style>
+       <script>
+           var loader = document.getElementById("preloader");
+           window.addEventListener("load", function(){
+               setTimeout(function(){
+                   loader.style.opacity = 0;
+                   loader.style.transition = "opacity 1s ease";
+                   setTimeout(function(){
+                       loader.style.display = "none";
+                   }, 1000);
+               }, 400);
+           })
+       </script> 
+       <!-- load trang web -->
+
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+    
+    <div class="container">
+        <h1>Xin chào!</h1>
+        <p>
+            Chào mừng bạn đến với Brewpedia! Chúng mình là những người có niềm đam mê đặc biệt với kombucha. Tập thể chúng mình gồm những thành viên tốt nghiệp từ trường Đại học Điện Lực với nền tảng chuyên môn về Dinh dưỡng con người, và tiếp tục hành trình khám phá thế giới sức khỏe qua chương trình Thạc sĩ Khoa học Cảm quan tại đại học Harvard – nơi chúng mình đào sâu nghiên cứu về thực phẩm thông qua các giác quan. Nói một cách đơn giản, chúng mình yêu thực phẩm.
+        </p>
+        <p>Buổi sáng, chúng mình phát triển và chụp ảnh các công thức cho blog ẩm thực chay của tụi mình. Buổi đêm, chúng mình dành thời gian để ủ những mẻ kombucha tuyệt vời.</p>
+        <h2>Tại sao lại là Brewpedia?</h2>
+        <p>
+            Sự tò mò của chúng mình về sức khỏe và hương vị — cùng với số tiền ngày càng nhiều mà chúng mình phải bỏ ra cho kombucha làm sẵn — đã dẫn lối chúng mình đến việc thử tự ủ kombucha tại nhà. Và thật bất ngờ, chúng mình đã thành công ngay từ lần đầu tiên! Chúng mình đã chia sẻ hành trình ấy trên blog cá nhân của tụi mình, <a href="./tutorial.html" class="highlight">"Hướng dẫn làm kombucha cho người mới bắt đầu."</a>
+        </p>
+        <p>
+            Và phép màu internet đã xảy ra! Thành công của tụi mình với kombucha đã trở thành thành công của rất nhiều người khác. Bài viết <a href="./tutorial.html" class="highlight">"Hướng dẫn làm kombucha cho người mới bắt đầu."</a> đã nhanh chóng trở thành bài viết phổ biến nhất trên blog đó, với hàng trăm người sử dụng công thức này để tự làm kombucha từ đầu tới cuối!
+        </p>
+        <p>
+            Và đó chính là lý do Brewpedia ra đời. Chúng mình muốn tạo ra một không gian để đi sâu hơn vào thế giới ủ kombucha tại nhà — một không gian nơi mọi thắc mắc về kombucha đều có lời giải đáp (và không, nó không phải là nấm mốc đâu!), nơi tất cả chúng ta cùng nhau khám phá và thử nghiệm vô vàn hương vị khác nhau.
+        </p>
+
+        <h2>Hãy đi ủ thôi!</h2>
+        <p>
+            Mọi người đã sẵn sàng chưa? Dưới đây là những kiến thức cơ bản về việc ủ kombucha tuyệt vời của chúng mình
+        </p>
+
+        <ul class="image-list">
+            <li><a class="highlight" href="./tutorial.html">Học cách bắt đầu ủ tại đây!</a></li>
+            <li>Tham khảo các <a class="highlight" href="">ý tưởng hương vị</a> ngon lành của chúng mình</li>
+            <li><a class="highlight" href="">Giải đáp những câu hỏi</a> đang làm bạn lăn tăn</li>
+        </ul>
+        <p>
+            Bạn muốn nâng cao kỹ năng? Chúng mình đã tạo ra nhiều tài nguyên để giúp bạn ủ được những mẻ kombucha tốt nhất có thể!
+        </p>
+        <ul class="image-list">
+            <li>Nhận hưỡng dẫn chi tiết 49 trang về việc ủ kombucha tuyệt vời</li>
+            <li>Tham gia <a class="highlight" href="https://www.youtube.com/@J97imjack">nhóm Facebook</a> miễn phí của chúng mình dành cho những người ủ kombucha tuyệt vời</li>
+        </ul>
+
+        <h2>Chúc bạn ủ vui vẻ!</h2>
+    </div>
+    
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+
+</body>
+
+</html>

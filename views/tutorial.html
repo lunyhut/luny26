@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewPedia: Hướng dẫn cơ bản</title>
+    <link rel="stylesheet" href="../css/tutorial.css">
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Thoát trang ok chưa -->
+    <button id="back-btn" onclick="goBack()">
+        <img src="../images/webicon/back1.svg" alt="Home" class="back-icon">
+    </button>
+        <script>
+            function goBack() {
+                if (document.referrer !== "") {
+                    window.history.back();
+                } else {
+                    window.location.href = " home.html"; 
+                }
+            }
+        </script>
+
+       <!-- load trang web -->
+       <div id="preloader"></div>
+       <style>
+           #preloader{
+           background: #FFF;
+           height: 100vh;
+           width: 100vw;
+           position: fixed;
+           z-index: 1000;
+           top: 0;
+           left: 0;
+           }
+       </style>
+       <script>
+           var loader = document.getElementById("preloader");
+           window.addEventListener("load", function(){
+               setTimeout(function(){
+                   loader.style.opacity = 0;
+                   loader.style.transition = "opacity 1s ease";
+                   setTimeout(function(){
+                       loader.style.display = "none";
+                   }, 1000);
+               }, 300);
+           })
+       </script> 
+       <!-- load trang web -->
+
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+
+    <div class="container">
+        <h1>Cách làm Kombucha</h1>
+        <p class="entry-text">Bạn đã bao giờ tự hỏi cách làm kombucha – loại trà lên men sủi bọt thơm ngon – như thế nào chưa? Chúng tôi sẽ hướng dẫn bạn các bước cơ bản để làm kombucha từ đầu đến cuối! Không cần thiết bị hay nguyên liệu phức tạp.</p>
+        <img src="../images/tutorial/how-to-make-homemade-kombucha-photo-2.jpg" alt="Kombucha" class="main-image">
+        <p>Các bước chính để làm kombucha tại nhà:</p>
+        <ol class="counter">
+            <li><strong><a class="highlight">Làm SCOBY</a></strong> (từ 1 đến 4 tuần) - tạo "men nấm"</li>
+            <li><strong><a class="highlight">Lên men lần đầu</a></strong> (từ 6 đến 10 ngày) - làm trà kombucha</li>
+            <li><strong><a class="highlight">Lên men lần hai</a></strong> (từ 3 đến 10 ngày) - tạo ga cho trà kombucha</li>
+        </ol>
+        <img src="../images/tutorial/Infographic-kombucha.jpg" alt="kbcinfographic" class="main-image">
+        <img src="../images/tutorial/brewpedia-divider-1-1024x54.jpg" alt="divider" class="main-image">
+        <h2>Cách tạo SCOBY:</h2>
+        <p>SCOBY (Symbiotic Culture Of Bacteria and Yeast) là màng sinh học hình thành trên bề mặt của quá trình lên men. Nó là "mẹ nấm" khởi động mỗi mẻ kombucha và bảo vệ kombucha khỏi các chất gây ô nhiễm như bụi và mảnh vụn. Bạn có thể mua SCOBY sẵn có, nhưng cũng dễ dàng tự làm tại nhà.</p>
+        <img src="../images/tutorial/kombucha-scoby-closeup.jpg" alt="SCOBY" class="main-image">
+        <h3>Nguyên liệu để làm SCOBY</h3>
+        <ul class="image-list">
+            <li>7 cốc (1.6 L) nước (có thể dùng nước máy)</li>
+            <li>½ cốc (100 g) đường trắng</li>
+            <li>4 túi trà đen</li>
+            <li>1 cốc (240 mL) kombucha mua ở cửa hàng, không tiệt trùng, không hương liệu</li>
+        </ul>
+
+        <h3>Dụng cụ cần thiết:</h3>
+        <ul class="image-list">
+            <li>Một bình lớn bằng thủy tinh hoặc gốm (dung tích ít nhất 3,7 lít)</li>
+            <li>Vải dệt chặt (bộ lọc cà phê, khăn giấy, khăn ăn, vải thưa)</li>
+            <li>Dây chun</li>
+            <li>Nồi lớn để đun nước</li>
+        </ul>
+
+        <h3>Cách làm:</h3>
+        <div class="step">
+            <h4>Bước 1: Pha trà ngọt:</h4>
+            <p>Đun sôi nước. Sau khi nước sôi, tắt bếp và hòa tan đường vào nước. Thêm túi trà và để ngâm ít nhất 20 phút (hoặc đến khi trà nguội).</p>
+        </div>
+        <img src="../images/tutorial/homemade-kombucha-1.jpg" alt="Kombucha1" class="main-image">
+        <div class="step">
+            <h4>Bước 2: Để nguội đến nhiệt độ phòng:</h4>
+            <p>Để trà nóng nguội đến nhiệt độ phòng. Bạn có thể tăng tốc quá trình này bằng cách đun sôi chỉ 2 cốc nước, hòa tan đường và ngâm trà trong 20 phút. Sau đó thêm 5 cốc nước lạnh còn lại, giúp hỗn hợp nhanh chóng đạt nhiệt độ phòng.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 3: Thêm kombucha:</h4>
+            <p>Đổ trà ngọt vào bình, sau đó thêm kombucha mua ở cửa hàng, đảm bảo bao gồm cả cặn ở đáy chai, vì chúng giúp khởi động quá trình lên men.</p>
+        </div>
+        <img src="../images/tutorial/homemade-kombucha-3.jpg" alt="Kombucha3" class="main-image">
+        <div class="step">
+            <h4>Bước 4: Che lại và lên men</h4>
+            <p>Che bình bằng vài lớp vải dệt chặt để ngăn côn trùng và mảnh vụn, cố định bằng dây chun. Đặt bình ở nơi tối, yên tĩnh và ở nhiệt độ phòng (21-24°C) trong 1 đến 4 tuần, đến khi hình thành SCOBY dày khoảng 0,5 cm.</p>
+        </div>
+
+        <p>
+            <b>Chuyển sang lên men lần đầu:</b> Sau khi có SCOBY, bạn có thể sử dụng nó để bắt đầu quá trình lên men lần đầu.
+        </p>
+
+
+        <h3>LƯU Ý KHI LÀM SCOBY:</h3>
+        <ol class="counter">
+            <li><strong><a class="highlight">Không dùng trà khử caffein</a></strong>: SCOBY không phát triển tốt với trà khử caffein.</li>
+            <li><strong><a class="highlight">Chỉ dùng trà đen</a></strong>: SCOBY không phát triển tốt với trà xanh hoặc trà có hương vị. Sau khi SCOBY lớn hơn, bạn có thể sử dụng trà xanh, nhưng ban đầu nên dùng trà đen.</li>
+            <li><strong><a class="highlight">Không dùng mật ong</a></strong>: Mật ong có thể chứa vi khuẩn botulism, có thể nguy hiểm trong quá trình lên men. Bạn có thể sử dụng mật ong trong lần lên men thứ hai, khi số lượng vi khuẩn có lợi đã đủ để chống lại vi khuẩn có hại, nhưng ban đầu nên dùng đường.</li>
+        </ol>
+        <img src="../images/tutorial/brewpedia-divider-2-1024x53.jpg" alt="divider" class="main-image">
+        <h2>Lên men lần đầu</h2>
+        <p>Sau khi có SCOBY, bạn đã sẵn sàng bắt đầu quá trình lên men lần đầu để tạo ra kombucha mà bạn sẽ uống.</p>
+
+        <h3>Nguyên liệu cho lần len men đầu tiên:</h3>
+        <ul class="image-list">
+            <li>7 cốc (1.6 L) nước</li>
+            <li>½ cốc (100 g) đường trắng</li>
+            <li>4 túi trà đen hoặc trà xanh</li>
+            <li>1 cốc (240 mL) kombucha (từ mẻ trước hoặc mua tại cửa hàng)</li>
+            <li>SCOBY</li>
+        </ul>
+
+        <h3>Dụng cụ cần thiết:</h3>
+        <ul class="image-list">
+            <li>Bình lớn bằng thủy tinh hoặc gốm (dung tích ít nhất 3,7 lít)</li>
+            <li>Vải dệt chặt và dây chun</li>
+            <li>Nồi lớn để đun nước</li>
+        </ul>
+
+        <h3>Các bước thực hiện:</h3>
+        <div class="step">
+            <h4>Bước 1: Pha trà ngọt</h4>
+            <p>Đun sôi nước. Sau khi nước sôi, tắt bếp và hòa tan đường vào nước. Thêm túi trà và để ngâm ít nhất 20 phút hoặc đến khi trà nguội.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 2: Để nguội đến nhiệt độ phòng:</h4>
+            <p>Để trà nguội đến nhiệt độ phòng như đã mô tả ở bước tạo SCOBY.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 3: Thêm kombucha khởi đầu và SCOBY:</h4>
+            <p>Đổ trà ngọt vào bình, thêm kombucha khởi đầu và nhẹ nhàng đặt SCOBY vào bình.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 4: Che phủ:</h4>
+            <p>Che bình bằng vải dệt chặt và cố định bằng dây chun.</p>
+        </div>
+        <img src="../images/tutorial/homemade-kombucha-4.jpg" alt="Kombucha4" class="main-image">
+        <div class="step">
+            <h4>Bước 5: Lên men:</h4>
+            <p>Đặt bình ở nơi tối, yên tĩnh và ở nhiệt độ phòng (21-24°C) trong 6 đến 10 ngày. Khi hoàn thành, kombucha nên có vị hơi ngọt và hơi chua.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 6: Chuyển sang lên men lần hai:</h4>
+            <p>Dành 2 cốc từ mẻ này để làm kombucha khởi đầu cho mẻ tiếp theo (để lại trong bình cùng SCOBY). Phần còn lại có thể chuyển sang lần lên men thứ hai để tạo ga cho kombucha.</p>
+        </div>
+
+        <h3>LƯU Ý KHI LÊN MEN LẦN ĐẦU:</h3>
+        <ol class="counter">
+            <li><a class="highlight">Thời gian lên men</a>: Thời gian lên men có thể thay đổi tùy thuộc vào nhiệt độ và sở thích cá nhân. Kombucha sẽ có vị ngọt hơn nếu lên men ngắn ngày và chua hơn nếu lên men lâu hơn.</li>
+            <li><a class="highlight">Bảo quản SCOBY</a>: SCOBY có thể được sử dụng nhiều lần. Giữ nó trong một ít kombucha để duy trì hoạt động.</li>
+        </ol>
+        <img src="../images/tutorial/brewpedia-divider-3-1024x53.jpg" alt="divider" class="main-image">
+        <h2>Lên men lần hai</h2>
+        <p>Đây là bước cuối cùng và thú vị nhất trong quá trình làm kombucha tại nhà! Lần lên men thứ hai là khi kombucha được tạo hương vị và tạo ga, biến nó thành một thức uống sủi bọt thơm ngon.</p>
+        <img src="../images/tutorial/homemade-kombucha-2.jpg" alt="Kombucha2" class="main-image">
+        <h3>Nguyên liệu cho lần lên men thứ hai:</h3>
+        <ul class="image-list">
+            <li>Kombucha tự làm từ lần lên men đầu</li>
+            <li>Chất tạo ngọt (trái cây, mật ong hoặc đường). Tỷ lệ chung là 1 muỗng cà phê đường cho mỗi cốc kombucha</li>
+            <li>Chai thủy tinh có nắp kín (chai bia hoặc chai kombucha cũ)</li>
+        </ul>
+
+        <h3>Các bước thực hiện:</h3>
+        <div class="step">
+            <h4>Bước 1: Lọc kombucha:</h4>
+            <p>Loại bỏ SCOBY và 2 cốc kombucha để làm mẻ tiếp theo.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 2: Thêm hương vị:</h4>
+            <p>Thêm trái cây, nước ép hoặc đường vào chai.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 3: Rót kombucha:</h4>
+            <p>Để chai ở nhiệt độ phòng từ 3-10 ngày.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 4: Lên men:</h4>
+            <p>Để chai ở nhiệt độ phòng từ 3-10 ngày.</p>
+        </div>
+        <div class="step">
+            <h4>Bước 5: Làm lạnh và thưởng thức:</h4>
+            <p>Sau khi đủ ga, cho vào tủ lạnh để chậm quá trình lên men.</p>
+        </div>  
+        <img src="../images/tutorial/homemade-trilogy-kombucha-1.jpg" alt="Kombucha5" class="main-image">
+        <h3>LƯU Ý KHI LÊN MEN LẦN HAI:</h3>
+        <ol class="counter">
+            <li>Thử độ ga sau 3 ngày bằng cách mở một chai. Nếu chưa đủ, để thêm vài ngày.</li>
+            <li>Không đóng chai quá đầy để tránh nổ do áp suất khí gas.</li>
+            <li>Mở chai cẩn thận, đặc biệt khi thêm nhiều đường hoặc trái cây.</li>
+        </ol>
+
+        <p>Giờ bạn đã biết cách làm kombucha tại nhà! Chúc bạn có những mẻ kombucha thơm ngon và bổ dưỡng!</p>
+        <img src="../images/tutorial/homemade-kombucha-2.jpg" alt="Kombucha6" class="main-image">
+    </div>
+
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+
+</body>
+
+
+
+</html>
