@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 16rem;
+    border-top: 1px solid #E0E0E0;
+}
+
+.footer .left-footer {
+    position: sticky;
+    padding-top: 0;
+    top: 0;
+}
+
+.footer .left-footer .website-logo {
+    max-width: none;
+    height: auto;
+    object-fit: cover;
+    width: 260px;
+}
+
+.footer .left-footer .social {
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    cursor: pointer;
+}
+
+.footer .left-footer .social a {
+    text-decoration: none !important;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.footer .left-footer .social a i {
+    font-size: 2.4rem;
+    color: #040404 !important;
+}
+
+.footer .right-footer {
+    margin-left: auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.footer .right-footer ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.4rem;
+}
+
+.footer .right-footer ul li {
+    margin: 1.4rem;
+    display: list-item;
+}
+
+.footer .right-footer ul li:first-child {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.footer .right-footer ul li:not(:first-child) a:hover {
+    text-decoration: underline;
+    color: rgb(245, 197, 37);
+}
+
+.footer .right-footer ul li a {
+    text-decoration: none;
+    color: #040404;
+}
+
+.info {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 11px 0;
+    background: url('../../images/pattern/pattern-dashes.png');
+    background-position: center;
+    position: absolute;
+}
+
+.info h6 {
+    font-family: 'Avenir', sans-serif;
+    font-size: small;
+    font-weight: 100;
+    text-align: center;
+}
+
+.container-footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    height: 40px;
+    width: 40px;
+    background-image: url("../../images/webicon/return.png");
+    background-size: cover;
+    border-radius: 50%;
+    border-color: white;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .footer .left-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer .left-footer .social {
+        margin-top: 1rem;
+    }
+
+    .footer .right-footer {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 2rem;
+        justify-content: center;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .footer .right-footer ul {
+        padding-left: 0;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        position: relative;
+    }
+
+    .back {
+        display: none;
+    }
+}
