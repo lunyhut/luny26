@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Hello: Cách làm cốt trà lài</title>
+    <link rel="stylesheet" href="../css/tutorial.css">
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <button id="back-btn" onclick="goBack()">
+        <img src="../images/webicon/back1.svg" alt="Home" class="back-icon">
+    </button>
+    <script>
+        function goBack() {
+            if (document.referrer !== "") {
+                window.history.back();
+            } else {
+                window.location.href = "home.html"; 
+            }
+        }
+    </script>
+
+    <div id="preloader"></div>
+    <style>
+        #preloader {
+            background: #FFF;
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.opacity = 0;
+                loader.style.transition = "opacity 1s ease";
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 1000);
+            }, 300);
+        })
+    </script> 
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+
+    <div class="container">
+        <h1>Cách làm cốt trà lài cho trà trái cây</h1>
+        <p class="entry-text">Cốt trà lài (trà nhài) với hương thơm thanh tao, thoang thoảng cùng vị đậm đà là nền tảng hoàn hảo để pha chế các món trà trái cây nhiệt đới tươi mát. Dưới đây là công thức và quy trình kỹ thuật ủ trà chuẩn vị giúp giữ trọn hương thơm và màu sắc đẹp mắt.</p>
+        
+        <img src="../images/tutorial/cot-tra-lai.png" alt="Cốt trà lài chuẩn vị" class="main-image">
+        
+        <p>Tóm tắt các bước chính để thực hiện:</p>
+        <ol class="counter">
+            <li><strong><a class="highlight">Ủ trà lài</a></strong> (đúng nhiệt độ và thời gian)</li>
+            <li><strong><a class="highlight">Chuẩn bị nguyên liệu ca chứa</a></strong> (đá và đường trái cây)</li>
+            <li><strong><a class="highlight">Lọc tinh trà & Sốc nhiệt</a></strong> (giữ hương vị và bảo quản)</li>
+        </ol>
+
+        <img src="../images/tutorial/brewpedia-divider-1-1024x54.jpg" alt="divider" class="main-image">
+        
+        <h2>Nguyên liệu & Dụng cụ chuẩn bị:</h2>
+        
+        <h3>Nguyên liệu:</h3>
+<div class="recipe-grid">
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/tra-lai.jpg" alt="Trà lài"> </div>
+        <p class="item-name">Trà lài</p>
+        <p class="item-detail">40 gram</p>
+    </div>
+
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/duong-trai-cay.jpg" alt="Đường trái cây"> </div>
+        <p class="item-name">Đường trái cây</p>
+        <p class="item-detail">140 ml</p>
+    </div>
+
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/da-sach.jpg" alt="Đá sạch"> </div>
+        <p class="item-name">Đá sạch</p>
+        <p class="item-detail">500 gram</p>
+    </div>
+
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/nuoc-soi.jpg" alt="Nước sôi"> </div>
+        <p class="item-name">Nước sôi</p>
+        <p class="item-detail">1000 ml</p>
+    </div>
+</div>
+
+<h3>Dụng cụ cần thiết:</h3>
+<div class="recipe-grid">
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/binh-pha-tra.jpg" alt="Bình trà lớn"> </div>
+        <p class="item-name">Bình trà lớn</p>
+        <p class="item-detail">Dùng để ủ trà</p>
+    </div>
+
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/ca-dung.jpg" alt="Ca lớn 2.8L"> </div>
+        <p class="item-name">Ca lớn 2.8L</p>
+        <p class="item-detail">Chứa đá và đường</p>
+    </div>
+
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/mang-loc-tinh.jpg" alt="Màng lọc tinh trà"> </div>
+        <p class="item-name">Màng lọc trà</p>
+        <p class="item-detail">Lọc sạch bã trà</p>
+    </div>
+
+    <div class="recipe-item">
+        <div class="recipe-image-box">
+            <img src="../images/tutorial/am-dun-nuoc.jpg" alt="Ấm đun nước"> </div>
+        <p class="item-name">Ấm đun nước</p>
+        <p class="item-detail">Đun nước sôi 96°C</p>
+    </div>
+</div>
+
+        <img src="../images/tutorial/brewpedia-divider-2-1024x53.jpg" alt="divider" class="main-image">
+
+        <h2>Các bước thực hiện chi tiết:</h2>
+
+        <div class="step">
+            <h4>Bước 1: Cho trà vào bình & Ủ trà</h4>
+            <p>Cho <b>40 gram</b> trà lài vào bình trà lớn. Đun nước sôi, 
+                đợi một chút để nhiệt độ hạ xuống khoảng <b>96 độ C</b> thì rót <b>1000ml</b> 
+                nước sôi vào bình đã đong trà. Đóng nắp bình và để ủ trà trong vòng <b>8 phút</b> để trà ra hết tinh chất.</p>
+        </div>
+        <div class="gallery-container">
+            <div class="top-image">
+                <img src="../images/tutorial/nguyen-liau-u-tra.jpg" alt="Ảnh trên cùng">
+            </div>
+            <div class="bottom-images">
+                <img src="../images/tutorial/do-tra.jpg" alt="Ảnh dưới 1">
+                <img src="../images/tutorial/do-nuoc-soi.jpg" alt="Ảnh dưới 2">
+                <img src="../images/tutorial/u-tra.jpg" alt="Ảnh dưới 3">
+        </div>
+            
+        </div>
+        <div class="step">
+            <h4>Bước 2: Chuẩn bị ca chứa lớn</h4>
+            <p>Trong thời gian chờ đợi ủ trà, bạn tiến hành đong <b>140ml</b> đường trái cây và 
+                <b>500gram</b> đá sạch cho tất cả vào ca chứa lớn dung tích <b>2.8L</b>.</p>
+        </div>
+        
+        <div class="bottom-images">
+                <img src="../images/tutorial/nguyen-lieu-u-tra-2.jpg" alt="Ảnh 1">
+                <img src="../images/tutorial/do-da.jpg" alt="Ảnh 2">
+                <img src="../images/tutorial/do-duong.jpg" alt="Ảnh 3">
+        </div>
+        <div class="step">
+            <h4>Bước 3: Lọc tinh trà & Bảo quản</h4>
+            <p>Sau khi hết <b>8 phút</b> ủ trà, dùng màng lọc tinh trà đặt lên miệng ca chứa nguyên liệu 
+                (ca có đá và đường ở Bước 2). Rót trà từ từ theo <b>hình xoắn ốc</b> 
+                để lọc sạch bã trà và lấy được trọn vẹn phần tinh trà. 
+                Khuấy thật đều tay cho đến khi đá tan hết hoàn toàn. 
+                Cho cốt trà vào ngăn mát tủ lạnh để bảo quản.</p>
+        </div>
+        <div class="bottom-images">
+                <img src="../images/tutorial/loc-tra.jpg" alt="Ảnh 1">
+                <img src="../images/tutorial/cot-tra-lai-2.jpg" alt="Ảnh 2">
+        </div>
+
+        <img src="../images/tutorial/brewpedia-divider-3-1024x53.jpg" alt="divider" class="main-image">
+
+        <h3>LƯU Ý KHI LÀM CỐT TRÀ LÀI:</h3>
+        <ol class="counter">
+            <li><strong>Nhiệt độ nước chuẩn xác:</strong> Cần giữ nước ở mức khoảng 96 độ. Nếu nước quá sôi (100 độ) sẽ khiến trà lài dễ bị chát đắng và nồng, còn nước quá nguội thì trà không dậy hết mùi thơm.</li>
+            <li><strong>Kỹ thuật rót xoắn ốc:</strong> Giúp dòng nước trà được phân bổ đều qua màng lọc, hòa quyện tốt hơn và thu được nước trà trong, không bị cặn.</li>
+            <li><strong>Sốc nhiệt bằng đá:</strong> Việc khuấy tan đá nhanh chóng giúp làm lạnh đột ngột (sốc nhiệt), giúp giữ được hương thơm đặc trưng của trà lài không bị bay hơi và cốt trà bảo quản được lâu hơn trong ngăn mát.</li>
+        </ol>
+
+        <p>Bây giờ bạn đã có một bình cốt trà lài chuẩn vị, đậm đà để sẵn sàng kết hợp với các loại syrup trái cây hay hoa quả tươi rồi! Chúc bạn pha chế thành công!</p>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+
+</body>
+
+</html>

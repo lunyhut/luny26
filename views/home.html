@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Hello: Làm trà xoài Tại Nhà Dễ Dàng</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body> 
+    <div class="login-logo-wrapper">
+        <img src="../images/webicon/web_logo.png" alt="Logo Kombucha" class="login-logo">
+    </div>
+    <!-- load trang web -->
+    <div id="preloader"></div>
+    <style>
+        #preloader{
+        background: #FFF;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        }
+    </style>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.opacity = 0;
+                loader.style.transition = "opacity 1s ease";
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 1000);
+            }, 300);
+        })
+    </script> 
+    <!-- load trang web -->
+     
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+
+    
+    <div class="banner" id="banner">
+        <img src="../images/home/Made-it-easy.png" alt="banner">
+        <div class="banner-text">
+            <img src="../images/home/tra-xoai-tuoi-text.png" alt="">
+            <p>Trạm dừng cho những ai mê pha chế! 
+                Tụi mình ở đây để giúp hành trình tự pha trà xoài tại nhà của bạn trở nên dễ dàng và 
+                thành công ngay từ lần đầu tiên.</p>
+        <button class="button-hover">
+            <a href="https://www.facebook.com/MangoHelloVietnam">Tham gia cùng Mango Hello!</a>
+            <img class="icon-image" src="../images/home/mango-hello.png" alt="xoài tươi">
+        </button>
+        </div>
+    </div>
+
+
+
+    <div class="main-content">
+        
+        <div class="menu1">
+            <div class="menu1-item">
+                <a href="../views/tutorial.html">
+                    <span>Bắt đầu ủ</span>
+                    <img src="../images/home/cach-lam.jpg" alt="cách làm Kombucha">
+                </a>
+            </div>
+            <div class="menu1-item">
+                <a href="../views/shop.html">
+                    <span>Dụng cụ</span>
+                    <img src="../images/home/dung-cu.jpg" alt="Dụng cụ">
+                </a>
+            </div>
+            <div class="menu1-item">
+                <a href="#vi-tri-huong-vi">
+                    <span>Chọn hương vị</span>
+                    <img src="../images/home/chon-huong-vi.jpg" alt="Chọn Hương vị">
+                </a>
+            </div>
+            
+            <div class="menu1-item">
+                <a href="../views/introduction.html">
+                    <span>Giới thiệu</span>
+                    <img src="../images/home/gioi-theu.png" alt="Giới thiệu">
+                </a>
+            </div>
+        </div>
+
+        <div class="brief-introduction">
+            <figure>
+                <img src="../images/home/anh-minh-hoa.jpg" alt="Ảnh minh họa">
+            </figure>
+            <div class="introduction-paragraph">
+                <h2>Hãy cùng làm trà xoài nhé!</h2>
+                <p>Chúng mình là một nhóm các bạn trẻ đam mê pha chế tại nhà và đã giúp hàng trăm người tự tay làm trà xoài ngay trong căn bếp của mình!</p>
+                <p>Tình yêu với trà xoài của tụi mình cũng bắt đầu y chang bao người khác – 
+                    nghiện cái vị ngọt thanh của xoài chín quyện với vị đậm đà của trà đến mức tốn không biết bao nhiêu tiền cho các quán cà phê. 
+                    Cho đến một ngày đẹp trời, tụi mình quyết định tự "vào bếp" mò mẫm công thức pha chế riêng. 
+                    Kể từ đó, tụi mình nói không với trà xoài ngoài tiệm luôn, 
+                    vì tự làm vừa ngon, vừa đậm vị xoài tươi mà lại cực kỳ kinh tế!</p>
+                <button>
+                    <a href="https://www.facebook.com/MangoHelloVietnam"  id="vi-tri-huong-vi">Tham gia cùng Mango Hello!</a>
+                </button>
+                <div class="social">
+                    <a href="https://www.instagram.com/p/DUmfjfPFLU8/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/MangoHelloVietnam">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@MangoHelloVN">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <h1 class="menu2-head-paragraph">Tìm hương vị yêu thích</h1>
+        <div class="menu2">
+                    <div class="menu2-item">
+                        <span>Trà trái cây</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/tra-trai-cay.jpg" alt="Trà trái cây xoài"></figure>
+                        </a>
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Trà sữa</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/tra-sua.jpg" alt="Trà sữa xoài"></figure>
+                        </a>
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Smoothies</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/smoothies.jpg" alt="Smoothies xoài"></figure>
+                        </a>
+                    </div>
+
+                    <div class="menu2-item">
+                        <span>Sữa chua</span>
+                        <a href="#vi-tri-10-huong-vi">
+                            <figure><img src="../images/home/sua-chua.jpg" alt="Sữa chua xoài"></figure>
+                        </a>
+                    </div>
+        </div>
+
+       <div class="what-is-kombucha">
+            <h1 id="vi-tri-10-huong-vi">TRÀ XOÀI LÀ GÌ?</h1>
+            <p>Trà xoài là sự kết hợp hoàn hảo giữa vị chát nhẹ thanh mát của cốt trà hảo hạng và hương thơm ngọt ngào, mọng nước của những quả xoài chín cây. Tự pha chế trà xoài tại nhà cùng Mango Hello không chỉ giúp bạn giải nhiệt tức thì, bổ sung vitamin tự nhiên mà còn mở ra thế giới sáng tạo để bạn thoải mái biến tấu cùng sữa chua, trân châu hay kem cheese béo ngậy. Và điều tuyệt nhất là việc làm ra một ly trà xoài chuẩn vị quán lại dễ hơn rất nhiều so với những gì bạn tưởng tượng.</p>
+        </div>
+
+        <div class="top-flavors">
+            <h1>TOP 10 HƯƠNG VỊ</h1>
+            <hr>
+        </div>
+
+        <div class="menu3">
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/tra-xoai-tuoi.jpg" alt="Trà xoài tươi" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>1</h2>
+                    </div>
+                    <h3 class="flavor-name">Trà xoài tươi</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 1 hr
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/tra-xoai-dua-luoi.jpg" alt="Trà xoài dưa lưới" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>2</h2>
+                    </div>
+                    <h3 class="flavor-name">Trà xoài dưa lưới</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/tra-xoai-berries.jpg" alt="Trà xoài berries" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>3</h2>
+                    </div>
+                    <h3 class="flavor-name">Trà xoài berries</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/tra-xoai-chanh-leo.jpg" alt="Trà xoài chanh leo" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>4</h2>
+                    </div>
+                    <h3 class="flavor-name">Trà xoài chanh leo</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/tra-sua-xoai.jpg" alt="Trà sữa xoài" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>5</h2>
+                    </div>
+                    <h3 class="flavor-name">Trà sữa xoài</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/tra-sua-xoai-dua-luoi.jpg" alt="Trà sữa xoài dưa lưới" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>6</h2>
+                    </div>
+                    <h3 class="flavor-name">Trà sữa xoài dưa lưới</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/tra-sua-xoai-dua-non.jpg" alt="Trà sữa xoài dừa non" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>7</h2>
+                    </div>
+                    <h3 class="flavor-name">Trà sữa xoài dừa non</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/xoai-tuoi-dua-non.jpg" alt="Xoài tươi dừa non" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>8</h2>
+                    </div>
+                    <h3 class="flavor-name">Xoài tươi dừa non</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/sua-chua-xoai-lac.jpg" alt="Sữa chua xoài lắc" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>9</h2>
+                    </div>
+                    <h3 class="flavor-name">Sữa chua xoài lắc</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 1 hr
+                </div>
+            </div>
+            <div class="menu3-item">
+                <div class="flavor-info">
+                    <img src="../images/home/top flavors/hong-tra-sua-xoai.jpg" alt="Hồng trà sữa xoài" class="flavor-image">
+                    <div class="flavor-rank">
+                        <h2>10</h2>
+                    </div>
+                    <h3 class="flavor-name">Hồng trà sữa xoài</h3>    
+                </div>
+                <div class="flavor-time">
+                <i class="fa-regular fa-clock"></i> 3 d
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h1>CÂU HỎI THƯỜNG GẶP VỀ TRÀ XOÀI</h1>
+            <div class="faq-container">
+            <div class="faq-item">
+                <img src="../images/home/tra-dang.jpg" alt="Tại sao trà xoài của tôi bị đắng chát?">
+                <h2>Tại sao cốt trà xoài bị đắng chát? 5 cách ủ trà êm dịu chuẩn vị quán!</h2>
+            </div>
+            <div class="faq-item">
+                <img src="../images/home/mut-xoai.jpg" alt="Cách làm mứt xoài (Mango Puree) đặc sánh">
+                <h2>Bí quyết tự làm mứt xoài (Mango Puree) đặc sánh, thơm nồng tại nhà</h2>
+            </div>
+            <div class="faq-item">
+                <img src="../images/home/chon-xoai.jpg" alt="Cách chọn xoài chín ngọt không bị xơ">
+                <h2>Hướng dẫn chọn xoài chín ngọt, chuẩn để pha chế (Kèm ảnh phân biệt chi tiết!)</h2>
+            </div>
+            <div class="faq-item">
+                <img src="../images/home/bao-quan-xoai.jpg" alt="Cách bảo quản trà xoài qua đêm">
+                <h2>Cách bảo quản cốt trà và mứt xoài: Giữ trọn hương vị không bị chua!</h2>
+            </div>
+            </div>
+            <a href="./faq.html" class="see-all-faqs">Xem tất cả câu hỏi thường gặp →</a>
+        </div>
+
+        <div class="subscribe-section">
+            <h2>Bạn có câu hỏi về việc pha chế Trà Xoài?</h2>
+            <p>Chúng tôi sẽ gửi đến bạn những mẹo hay nhất để làm trà xoài và các thức uống từ xoài tại nhà (kèm theo một tài liệu công thức 15 trang có thể in được về menu xoài).</p>
+            <form class="subscribe-form">
+                <div class="form-group">
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" placeholder="Nhập tên" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email của bạn:</label>
+                    <input type="email" id="email" placeholder="Nhập email" required>
+                </div>
+                <button>Đăng ký</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+
+    <script src="../scripts/home.js"></script>
+
+    <div class="logout-wrapper">
+        <button id="logout-btn" onclick="handleLogout()">
+            <span class="text">Đăng xuất tài khoản</span>
+            <span class="arrow">→</span>
+        </button>
+    </div>
+
+    <script> //Thuộc tính "Đăng xuất" =)))
+            function handleLogout() {
+            document.getElementById("logout-modal").classList.add("show");
+        }
+
+        function confirmLogout(isConfirmed) {
+            document.getElementById("logout-modal").classList.remove("show");
+            if (isConfirmed) {
+                localStorage.removeItem("user_token"); 
+                sessionStorage.clear();
+                window.location.href = "login.html"; 
+            }
+        }
+    </script>
+    
+    <script>
+        //Thuộc tính nhớ vị trí cuộn trang chủ =))))
+    window.addEventListener('scroll', () => {
+        sessionStorage.setItem('homeScrollPosition', window.scrollY);
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedPosition = sessionStorage.getItem('homeScrollPosition');
+        if (savedPosition) {
+            window.scrollTo({
+                top: parseInt(savedPosition, 10),
+                behavior: 'instant'
+            });
+        }
+    });
+</script>
+
+<div id="logout-modal" class="modal-overlay">
+    <div class="modal-box">
+        <h3>Bạn chắc chắn muốn đăng xuất?</h3>
+        <div class="modal-buttons">
+            <button class="btn-confirm" onclick="confirmLogout(true)">Đăng xuất</button>
+            <button class="btn-cancel" onclick="confirmLogout(false)">Hủy</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

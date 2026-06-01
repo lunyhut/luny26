@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Hello: FAQs</title>
+    <script src="../scripts/mainPage.js"></script>
+    <link rel="stylesheet" href="../css/faq.css">
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const headers = document.querySelectorAll(".card h3");
+        
+            headers.forEach(header => {
+                header.addEventListener("click", function() {
+                    const currentlyActive = document.querySelector(".answer.show");
+                    const answer = this.nextElementSibling;
+                    if (currentlyActive && currentlyActive !== answer) {
+                        currentlyActive.classList.remove("show");
+                    }
+                    answer.classList.toggle("show");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Thoát trang ok chưa -->
+     <button id="back-btn" onclick="goBack()">
+        <img src="../images/webicon/back1.svg" alt="Home" class="back-icon">
+    </button>
+        <script>
+            function goBack() {
+                if (document.referrer !== "") {
+                    window.history.back();
+                } else {
+                    window.location.href = " home.html";
+                }
+            }
+        </script>
+
+    <!-- load trang web -->
+    <div id="preloader"></div>
+    <style>
+        #preloader{
+        background: #FFF;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        }
+    </style>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.opacity = 0;
+                loader.style.transition = "opacity 1s ease";
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 1000);
+            }, 300);
+        })
+    </script> 
+    
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+
+    <section class="faq-section">
+    <h1>FAQ - GÓC GIẢI ĐÁP</h1>
+    <p>
+        Bạn gặp khó khăn hay có thắc mắc gì trong hành trình tự pha trà xoài tươi tại nhà không? 
+        Dưới đây là tổng hợp những câu hỏi mà Mango Hello thường gặp nhất từ các bạn! 
+        Đừng ngần ngại, không có câu hỏi nào là thừa cả! Hãy bấm trực tiếp vào câu hỏi để xem câu trả lời nhé!
+    </p>
+</section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+    <img src="../images/faq/dac-biet.jpg" alt="img1">
+    <h3 onclick="toggleAnswer(this)">Trà xoài tươi Mango Hello có gì đặc biệt?</h3>
+    <p class="answer">Tụi mình kết hợp cốt trà hảo hạng thơm nhẹ với mứt xoài chín tự nhiên, không dùng chất bảo quản, giữ trọn vị xoài tươi nguyên bản thanh mát.</p>
+</div>
+
+<div class="card">
+    <img src="../images/faq/ngot-gat.jpg" alt="img2">
+    <h3 onclick="toggleAnswer(this)">Trà xoài có vị ngọt gắt quá không?</h3>
+    <p class="answer">Không hề nha! Mango Hello hướng tới vị ngọt thanh thanh, chua nhẹ đặc trưng của trái xoài chín. Bạn cũng có thể tự điều chỉnh lượng đường khi pha tại nhà theo gu cá nhân.</p>
+</div>
+
+<div class="card">
+    <img src="../images/faq/tre-em.jpg" alt="img3">
+    <h3 onclick="toggleAnswer(this)">Trẻ em có uống được trà xoài tươi không?</h3>
+    <p class="answer">Được chứ, trà xoài tươi rất giàu vitamin và lành tính. Tuy nhiên vì có chứa một lượng nhỏ cốt trà, bạn nên cho bé uống vào ban ngày hoặc đầu giờ chiều để tránh bị mất ngủ nhé.</p>
+</div>
+
+<div class="card">
+    <img src="../images/faq/bao-quan.jpg" alt="img4">
+    <h3 onclick="toggleAnswer(this)">Trà xoài tươi để tủ lạnh được bao lâu?</h3>
+    <p class="answer">Để thưởng thức vị xoài tươi ngon nhất, bạn nên uống ngay trong ngày. Nếu bảo quản trong ngăn mát tủ lạnh, hãy dùng hết trong vòng 24 - 48 tiếng nhé.</p>
+</div>
+
+<div class="card">
+    <img src="../images/faq/chon-xoai.jpg" alt="img5">
+    <h3 onclick="toggleAnswer(this)">Nên chọn loại xoài nào để tự pha tại nhà ngon nhất?</h3>
+    <p class="answer">Bạn nên ưu tiên chọn các loại xoài chín muồi, thịt dày, ít xơ và ngọt đậm như xoài cát Hòa Lộc hoặc xoài chín cây để ly trà thơm và dậy vị nhất.</p>
+</div>
+
+<div class="card">
+    <img src="../images/faq/u-tra.jpg" alt="img6">
+    <h3 onclick="toggleAnswer(this)">Thời gian ủ cốt trà để pha trà xoài mất bao lâu?</h3>
+    <p class="answer">Thời gian ủ trà lý tưởng là từ 7 đến 10 phút với nước nóng khoảng 85°C - 90°C. Không nên ủ quá lâu trà sẽ bị chát và làm lấn át mất mùi xoài.</p>
+</div>
+
+<div class="card">
+    <img src="../images/faq/loai-tra.jpg" alt="img7">
+    <h3 onclick="toggleAnswer(this)">Có thể dùng trà túi lọc có sẵn hương vị để pha không?</h3>
+    <p class="answer">Có thể, nhưng tốt nhất bạn nên dùng trà xanh hoặc trà lài thuần khiết (không vị) để làm nổi bật lên hương thơm tự nhiên của xoài tươi.</p> </div>
+
+<div class="card">
+    <img src="../images/faq/nong-trong.jpg" alt="img8">
+    <h3 onclick="toggleAnswer(this)">Uống trà xoài có sợ bị nóng trong người không?</h3>
+    <p class="answer">Xoài chín có tính ấm, nhưng khi kết hợp với cốt trà xanh thanh nhiệt và đá lạnh thì lại trở thành món thức uống giải nhiệt mùa hè cực tốt. Chỉ cần bạn không uống quá nhiều liên tục là hoàn toàn yên tâm!</p> </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+</body>
+</html>
