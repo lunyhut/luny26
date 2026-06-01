@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Hello: Đăng kí</title>
+    <link rel="icon" href="../images/webicon/favicon.png">
+    <link rel="stylesheet" href="../css/template/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- load trang web -->
+    <div id="preloader"></div>
+    <style>
+        #preloader{
+        background: #FFF;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        }
+    </style>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.opacity = 0;
+                loader.style.transition = "opacity 1s ease";
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 1000);
+            }, 500);
+        })
+    </script> 
+    <!-- load trang web -->
+    <div id="header"></div>
+    <script src="../scripts/linkHeader.js"></script>
+
+    <div class="register-container">
+        <div class="content">
+
+        <div class="login-logo-wrapper">
+        <img src="../images/webicon/web_logo.png" alt="Logo" class="login-logo">
+        </div>
+        
+            <h5>Đăng ký tài khoản</h5>
+            <small class="success"></small>
+            <form>
+                <div>
+                    <input type="text" class="form-control" placeholder="Email">
+                    <small class="text-secondary error"></small>
+                </div>
+                <div>
+                    <input type="password" class="form-control" placeholder="Mật khẩu">
+                    <small class="text-secondary error"></small>
+                    <span id="togglePassword">
+                        <i></i>
+                    </span>
+                </div>
+                <div>
+                    <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                    <small class="text-secondary error"></small>
+                    <span id="toggleRePassword">
+                        <i></i>
+                    </span>
+                </div>
+                <button type="submit" class="btn">Đăng ký</button><br>
+            </form><br>
+            <div class="text-center">Hoặc đăng ký với</div><br>
+            <div class="another-method">
+                <button class="method-register"><i class="fab fa-facebook"></i> Facebook</button>
+                <button class="method-register"><i class="fab fa-google"></i> Google</button>
+            </div> <br>
+            <p class="text-secondary text-center">
+                Bằng việc nhấn “Đăng ký”, bạn đã đọc và đồng ý với <a href="#">điều khoản</a> của chúng tôi.
+            </p>
+            <div class="text-center">
+                Bạn đã có tài khoản? <a href="login.html">Đăng nhập ngay</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../scripts/linkFooter.js"></script>
+    <script src="../scripts/register.js"></script>
+</body>
+</html>
