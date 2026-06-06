@@ -68,19 +68,21 @@
     font-size: 18px;
     font-weight: 700;
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.header .right-header ul li {
+.header .right-header > ul > li {
     position: relative;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding: 8px;
+    padding: 16px;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.header .right-header ul li span {
+.header .right-header > ul > li span {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -91,34 +93,22 @@
     transition: transform 0.3s ease;
 }
 
-.header .right-header ul li:hover {
+.header .right-header > ul > li:hover {
     background: black;
     color: white;
 }
 
-.header .right-header ul li:hover a {
+.header .right-header > ul > li:hover a {
     color: white;
 }
 
-.header .right-header ul li:hover i {
+.header .right-header > ul > li:hover i {
     transform: rotate(180deg);
-}
-
-.header .right-header ul li:hover ul {
-    opacity: 1;
-    max-height: 350px;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
-    display: flex;
-    background: white;
-    color: black;
 }
 
 .header .right-header ul li ul {
     z-index: 10;
     max-height: 0;
-    width: inherit;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -131,23 +121,43 @@
     visibility: hidden;
     transform: translateY(-10px);
     pointer-events: none;
-    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;}
+    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+    background: white;
+}
+
+.header .right-header > ul > li:hover ul {
+    opacity: 1;
+    max-height: 350px;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
 
 .header .right-header ul li ul li {
     width: 200px;
-    text-align: left;
-    padding-left: 22px;
-    align-items: flex-start;
+    padding: 0;
     border-bottom: 1px solid #cdcdcd;
+    cursor: pointer;
+    background: white;
 }
 
-.header .right-header ul li ul li:hover a{
-    background: white;
-    color: black;
+.header .right-header ul li ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 22px;
+    color: #333;
+    text-align: left;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
 }
 
 .header .right-header ul li ul li:hover a {
-    color: black;
+    background: black;
+    color: white;
+}
+
+.header .right-header ul li ul li:last-child {
+    border-bottom: none;
 }
 
 .search-icon {
