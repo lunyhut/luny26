@@ -123,6 +123,7 @@
     pointer-events: none;
     transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
     background: white;
+    color: black;
 }
 
 .header .right-header > ul > li:hover ul {
