@@ -98,7 +98,7 @@
     color: white;
 }
 
-.header .right-header > ul > li:hover a {
+.header .right-header > ul > li:hover > a {
     color: white;
 }
 
